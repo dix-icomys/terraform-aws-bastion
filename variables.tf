@@ -70,7 +70,13 @@ variable "bastion_amis" {
     "ap-northeast-1" = "ami-29160d47"
     "ap-southeast-2" = "ami-0c95b86f"
     "sa-east-1"      = "ami-fb890097"
+    "us-gov-west-1"  = "ami-8578e4e4"
   }
+}
+
+variable "bucket_policy_arn_prefix" {
+  description = "Prefix for bucket resources"
+  default = "arn:aws"
 }
 
 variable "associate_public_ip_address" {
